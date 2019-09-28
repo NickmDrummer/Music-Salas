@@ -1,0 +1,59 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  p {
+    font-size: 10px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  .btnmp {
+    font-size: 10px;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+.navbar {
+  background: linear-gradient(to right, #180d7c, #6f0e7c);
+  max-height: 80px;
+}
+
+a {
+  color: white !important;
+}
+.logo {
+  width: 60px;
+  margin-left: 40px;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  margin-left: 0px;
+}
+
+.fa-envelope {
+  color: white;
+  font-size: 25px;
+  height: 100%;
+  margin-top: 5px;
+}
+
+.btnmp {
+  background: linear-gradient(to right, #00e0ff, #0075ff);
+  margin-left: 10px;
+  margin-top: 5px;
+}

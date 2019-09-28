@@ -1,0 +1,24 @@
+.bodyVersala {
+  margin-top: 30px !important;
+}
+.titles,
+.desc {
+  letter-spacing: 0.7em;
+  text-align: center;
+}
+.descripcionSala {
+  background-color: transparent;
+  padding: 20px;
+  color: white;
+  position: absolute;
+  z-index: 1;
+}
+.boxDescripcion {
+  height: 160px;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.trans {
+  opacity: 0.07;
+}
