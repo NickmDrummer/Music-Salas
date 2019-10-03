@@ -1,8 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import "../styles CSS/salas.css";
-import RowSalas from "./rowsalas";
+import "./salas.css";
+import CardSala from "../cardSala/cardSala";
 
 class Salas extends React.Component {
   render() {
@@ -27,7 +27,7 @@ class Salas extends React.Component {
               aria-controls="pills-centro"
               aria-selected="true"
             >
-              Zona Centro
+              ZONA CENTRO
             </a>
           </li>
           <li className="nav-item hvr-rectangle-out">
@@ -40,7 +40,7 @@ class Salas extends React.Component {
               aria-controls="pills-norte"
               aria-selected="false"
             >
-              Zona Norte
+              ZONA NORTE
             </a>
           </li>
 
@@ -54,7 +54,7 @@ class Salas extends React.Component {
               aria-controls="pills-sur"
               aria-selected="false"
             >
-              Zona Sur
+              ZONA SUR
             </a>
           </li>
 
@@ -68,7 +68,7 @@ class Salas extends React.Component {
               aria-controls="pills-oeste"
               aria-selected="false"
             >
-              Zona Oeste
+              ZONA OESTE
             </a>
           </li>
         </ul>
@@ -79,11 +79,21 @@ class Salas extends React.Component {
             role="tabpanel"
             aria-labelledby="pills-centro-tab"
           >
-            <div>
-              <RowSalas />
-              <RowSalas />
-              <RowSalas />
-              <RowSalas />
+            <div className="container-fluid">
+              <div className="row">
+                <CardSala />
+                <CardSala />
+                <CardSala />
+                <CardSala />
+                <CardSala />
+                <CardSala />
+                <CardSala />
+                <CardSala />
+                <CardSala />
+                <CardSala />
+
+                <CardSala />
+              </div>
             </div>
           </div>
 
@@ -93,10 +103,12 @@ class Salas extends React.Component {
             role="tabpanel"
             aria-labelledby="pills-norte-tab"
           >
-            <div>
-              <RowSalas />
-              <RowSalas />
-              <RowSalas />
+            <div className="container-fluid">
+              <div className="row">
+                <CardSala />
+                <CardSala />
+                <CardSala />
+              </div>
             </div>
           </div>
 
@@ -106,9 +118,15 @@ class Salas extends React.Component {
             role="tabpanel"
             aria-labelledby="pills-sur-tab"
           >
-            <div>
-              <RowSalas />
-              <RowSalas />
+            <div className="container-fluid">
+              <div className="row">
+                <CardSala />
+                <CardSala />
+                <CardSala />
+                <CardSala />
+
+                <CardSala />
+              </div>
             </div>
           </div>
 
@@ -118,8 +136,12 @@ class Salas extends React.Component {
             role="tabpanel"
             aria-labelledby="pills-oeste-tab"
           >
-            <div>
-              <RowSalas />
+            <div className="container-fluid">
+              <div className="row">
+                <CardSala />
+                <CardSala />
+                <CardSala />
+              </div>
             </div>
           </div>
         </div>

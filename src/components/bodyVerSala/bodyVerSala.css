@@ -1,0 +1,70 @@
+.titles {
+  letter-spacing: 0.7em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.descripcionSala {
+  background-image: url("../../img/Rectangle.png");
+  padding: 15px;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.lineaDiv {
+  border-top: 0.5px solid white;
+}
+.lineaDivServ {
+  border-top: 1px solid white;
+}
+.iconodatos {
+  margin-right: 15px;
+}
+.btnsr {
+  background: linear-gradient(to right, #36b12b, #19ec06);
+  margin-top: 30px;
+}
+.btnsr:hover {
+  box-shadow: 0px 0px 8px #19ec06;
+}
+.btnmensaje {
+  background: linear-gradient(to right, #00e0ff, #0075ff);
+  margin-top: 30px;
+}
+.btnmensaje:hover {
+  box-shadow: 0px 0px 8px #00e0ff;
+}
+
+.btnmensajemodal {
+  background: linear-gradient(to right, #00e0ff, #0075ff);
+}
+.btnmensajemodal:hover {
+  box-shadow: 0px 0px 8px #00e0ff;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .titles {
+    font-size: 80%;
+  }
+  .lineaDivServ {
+    display: none;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .lineaDivServ {
+    display: none;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .lineaDivServ {
+    display: none;
+  }
+}

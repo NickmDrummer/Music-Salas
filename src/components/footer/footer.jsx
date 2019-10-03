@@ -1,8 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import "../styles CSS/footer.css";
-import Logo from "../img/Logo.png";
+import "./footer.css";
+import Logo from "../../img/Logo.png";
 
 class Footer extends React.Component {
   render() {

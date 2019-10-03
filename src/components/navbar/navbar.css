@@ -1,0 +1,63 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  p {
+    font-size: 10px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  .btnmp {
+    font-size: 10px;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+.navbar {
+  background: linear-gradient(to right, #180d7c, #6f0e7c);
+}
+
+a {
+  color: white !important;
+}
+.logo {
+  width: 40px;
+  margin-left: 40px;
+}
+.iconosnavbar {
+  color: white !important;
+  width: 50px !important;
+  font-size: 18px;
+}
+.iconouser {
+  margin-right: 60px !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #c681ff !important;
+}
+.btnmp {
+  background: linear-gradient(to right, #00e0ff, #0075ff);
+}
+.navbar-toggler {
+  background: linear-gradient(to right, #c585c5, #9914aa);
+  border: 1px solid rgb(141, 0, 197);
+}
+.dropdown-item {
+  color: black !important;
+}
