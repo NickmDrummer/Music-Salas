@@ -1,11 +1,6 @@
-.avatarSalas {
-  box-shadow: 0px 10px 15px -10px rgb(255, 255, 255);
-  min-width: 40px;
-  max-width: 40px;
-}
-
-.btnvp {
+.btnsolicitarreserva {
   background: linear-gradient(to right, #00e0ff, #0075ff);
+  color: white !important;
 }
 
 .card {
@@ -19,14 +14,14 @@
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  p {
-    font-size: 10px;
+  .parrafo {
+    font-size: 12px;
   }
-  h5 {
+  .h5clase {
     font-size: 15px;
   }
-  .btnvp {
-    font-size: 10px;
+  .btnsolicitarreserva {
+    font-size: 14px;
   }
 }
 

@@ -1,13 +1,24 @@
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  p {
-    font-size: 10px;
+  .mensaje {
+    display: none;
   }
-  h5 {
-    font-size: 15px;
+  #navbarDropdownMenuLink {
+    color: white !important;
+    margin-right: 0px !important;
   }
-  .btnmp {
-    font-size: 10px;
+  .iconosnavbar {
+    color: white !important;
+
+    font-size: 14px !important;
+    margin-right: 0px !important;
+    padding: 0px !important;
+  }
+  .avatar {
+    width: 30px;
+    margin-left: 20px !important;
+    margin-right: 0px !important;
+    padding: 0px !important;
   }
 }
 
@@ -27,37 +38,35 @@
 @media (min-width: 1200px) {
 }
 
+.mensaje {
+  color: white !important;
+}
 .navbar {
   background: linear-gradient(to right, #180d7c, #6f0e7c);
 }
-
-a {
+#navbarDropdownMenuLink {
   color: white !important;
+  margin-right: 15px;
 }
 .logo {
   width: 40px;
+}
+.avatar {
+  width: 30px;
   margin-left: 40px;
 }
+
 .iconosnavbar {
   color: white !important;
   width: 50px !important;
   font-size: 18px;
-}
-.iconouser {
-  margin-right: 60px !important;
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
   background-color: #c681ff !important;
 }
-.btnmp {
-  background: linear-gradient(to right, #00e0ff, #0075ff);
-}
-.navbar-toggler {
-  background: linear-gradient(to right, #c585c5, #9914aa);
-  border: 1px solid rgb(141, 0, 197);
-}
+
 .dropdown-item {
   color: black !important;
 }

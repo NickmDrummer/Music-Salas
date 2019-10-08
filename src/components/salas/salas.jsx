@@ -3,23 +3,41 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./salas.css";
 import CardSala from "../cardSala/cardSala";
+import { animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleUp } from "@fortawesome/free-solid-svg-icons";
 
 class Salas extends React.Component {
+  // Desplamiento hasta el borde superior de la página
+  onClickUp = () => {
+    scroll.scrollToTop();
+  };
   render() {
     return (
       <div className="salas">
-        <div className="text-center">
-          <h5 className="titulo float-center">SALAS</h5>
+        <div className="container d-flex justify-content-center">
+          <form className="form-inline d-flex justify-content-center">
+            <input
+              className="form-control mr-sm-2 buscador"
+              type="search"
+              placeholder="Buscar Salas"
+              aria-label="Buscar salas"
+            />
+          </form>
+        </div>
+
+        <div className="text-center ">
+          <h5 className="titulo">SALAS</h5>
         </div>
 
         <ul
-          className="nav  bg-white  rounded nav-pills nav-fill nav-justified mb-3"
+          className="nav textozona bg-white   rounded nav-pills nav-fill nav-justified mb-3"
           id="pills-tab"
           role="tablist"
         >
           <li className="nav-item hvr-rectangle-out">
             <a
-              className="nav-link active align-self-center"
+              className="nav-link navlink  active align-self-center"
               id="pills-centro-tab"
               data-toggle="pill"
               href="#pills-centro"
@@ -30,9 +48,9 @@ class Salas extends React.Component {
               ZONA CENTRO
             </a>
           </li>
-          <li className="nav-item hvr-rectangle-out">
+          <li className="nav-item align-self-auto hvr-rectangle-out">
             <a
-              className="nav-link align-self-center"
+              className="nav-link navlink align-self-center"
               id="pills-norte-tab"
               data-toggle="pill"
               href="#pills-norte"
@@ -44,9 +62,9 @@ class Salas extends React.Component {
             </a>
           </li>
 
-          <li className="nav-item hvr-rectangle-out">
+          <li className="nav-item align-self-auto hvr-rectangle-out">
             <a
-              className="nav-link align-self-center"
+              className="nav-link navlink align-self-center"
               id="pills-sur-tab"
               data-toggle="pill"
               href="#pills-sur"
@@ -60,7 +78,7 @@ class Salas extends React.Component {
 
           <li className="nav-item hvr-rectangle-out">
             <a
-              className="nav-link "
+              className="nav-link navlink"
               id="pills-oeste-tab"
               data-toggle="pill"
               href="#pills-oeste"
@@ -145,6 +163,19 @@ class Salas extends React.Component {
             </div>
           </div>
         </div>
+        <a
+          id="myBtn"
+          className="up hvr-float  rounded-circle simplescrollup__button simplescrollup__button--show simplescrollup__button--hide"
+          onClick={this.onClickUp}
+        >
+          <FontAwesomeIcon
+            className="botonup"
+            style={{
+              color: "lawngreen"
+            }}
+            icon={faChevronCircleUp}
+          />
+        </a>
       </div>
     );
   }

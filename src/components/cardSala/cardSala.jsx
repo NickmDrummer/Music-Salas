@@ -13,15 +13,15 @@ class CardSala extends React.Component {
         <div className="card text-center">
           <img src={Portada} className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title ">DZ Estudio</h5>
-            <p className="card-text ">
+            <h5 className="card-title h5clase">DZ Estudio</h5>
+            <p className="card-text parrafo">
               Hay 4 salas de ensayo acustizadas y equipadas de primera linea.
               Alquiler de instrumentos. Bar con escenario para diferentes
               eventos. Venta de bebidas y parrillero en el patio.
             </p>
             <Link
               to="/secversala"
-              className="btnvp btn "
+              className="btnsolicitarreserva btn "
               href="#"
               role="button"
             >

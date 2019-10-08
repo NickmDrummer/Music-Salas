@@ -5,65 +5,77 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { Link } from "react-router-dom";
 import Logo from "../../img/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+
 import { faBell } from "@fortawesome/free-solid-svg-icons";
+import Avatar from "../../img/nick.jpg";
 
 class Navbar extends React.Component {
   render() {
     return (
-      <nav className="navbar fixed-top navbar-expand">
-        <div className="container">
-          <Link className="navbar-brand text-center img-fluid" to="/secsalas">
-            <img src={Logo} alt="" className="logo rounded" />
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarsExample02"
-            aria-controls="navbarsExample02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+      <nav className="navbar fixed-top navbar-expand navbar-light">
+        <Link to="/secsalas" className="navbar-brand nav-link">
+          <img
+            src={Logo}
+            alt=""
+            className="logo rounded d-inline-block align-top"
+          />
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Link className="navbar-brand " to="#">
+                <img
+                  src={Avatar}
+                  alt=""
+                  className="avatar rounded-circle d-inline-block align-top"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="Ir a Mi Perfil"
+                />
+              </Link>
+            </li>
 
-          <div className="collapse navbar-collapse" id="">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-link">
-                <a className="nav-link iconosnavbar " href="#">
-                  <FontAwesomeIcon className="iconosnavbar" icon={faBell} />
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <FontAwesomeIcon className="iconosnavbar" icon={faBell} />
+                <span className="mensaje ">Mensajes</span>
+              </a>
+            </li>
+
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link  dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              ></a>
+              <div
+                className="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a className="dropdown-item" href="#">
+                  Mi cuenta
                 </a>
-              </li>
-              <li className="nav-link iconouser dropdown">
-                <a
-                  className="nav-link iconosnavbar dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <FontAwesomeIcon
-                    className="iconosnavbar "
-                    icon={faUserCircle}
-                  />
+                <a className="dropdown-item" href="#">
+                  Cerrar Sesión
                 </a>
-                <div
-                  className="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <a className="dropdown-item" href="#">
-                    Mi Perfil
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    Cerrar Sesión
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </nav>
     );

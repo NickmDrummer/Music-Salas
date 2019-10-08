@@ -12,7 +12,11 @@ class HeaderIrSala extends React.Component {
         <div className="container">
           <div className="row">
             <div className="card mb-3">
-              <img src={Portada} class="card-img-top cardportada" alt="..." />
+              <img
+                src={Portada}
+                className="card-img-top cardportada"
+                alt="..."
+              />
               <div className="card-body">
                 <h5 className="card-title">
                   <img

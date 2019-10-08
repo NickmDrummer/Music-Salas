@@ -64,7 +64,7 @@ class BodyVerSala extends React.Component {
               {/* MODAL MESSAGE START-------------------------------------------------------------- */}
               <button
                 type="button"
-                class="btn btnmensaje btn-block btn-primary"
+                className="btn btnmensaje btn-block btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
                 data-whatever="@mdo"
@@ -73,39 +73,42 @@ class BodyVerSala extends React.Component {
               </button>
 
               <div
-                class="modal fade"
+                className="modal fade"
                 id="exampleModal"
-                tabindex="-1"
+                tabIndex="-1"
                 role="dialog"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
               >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-body">
+                <div className="modal-dialog" role="document">
+                  <div className="modal-content">
+                    <div className="modal-body">
                       <form>
-                        <div class="form-group">
-                          <label for="message-text" class="col-form-label">
+                        <div className="form-group">
+                          <label
+                            htmlFor="message-text"
+                            className="col-form-label"
+                          >
                             Mensaje:
                           </label>
                           <textarea
-                            class="form-control"
+                            className="form-control"
                             id="message-text"
                           ></textarea>
                         </div>
                       </form>
                     </div>
-                    <div class="modal-footer">
+                    <div className="modal-footer">
                       <button
                         type="button"
-                        class="btn btn-secondary"
+                        className="btn btn-secondary"
                         data-dismiss="modal"
                       >
                         Cerrar
                       </button>
                       <button
                         type="button"
-                        class="btn btnmensajemodal btn-primary"
+                        className="btn btnmensajemodal btn-primary"
                       >
                         Enviar Mensaje
                       </button>

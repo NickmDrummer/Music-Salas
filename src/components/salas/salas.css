@@ -1,7 +1,7 @@
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  p {
-    font-size: 10px;
+  .buscador {
+    max-width: 200px !important;
   }
 }
 
@@ -20,7 +20,9 @@
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 }
-
+.buscador {
+  width: 500px !important;
+}
 /* Rectangle Out */
 .hvr-rectangle-out {
   display: inline-block;
@@ -66,7 +68,7 @@
 }
 
 .salas {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .titulo {
@@ -81,7 +83,7 @@
   box-shadow: "X" "Y" "difuminado" "tamaño de la sombra" "color";
   */
 }
-.nav-link {
+.navlink {
   color: black !important;
 }
 
@@ -89,6 +91,35 @@
   color: #ffffff !important;
   background: linear-gradient(to right, #00e0ff, #0075ff) !important;
 }
-.flecha {
-  color: white !important;
+
+.botonup {
+  font-size: 275%;
+}
+
+#myBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+* Float */ .hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  -webkit-transform: translateY(0px);
+  transform: translateY(-15px);
 }
