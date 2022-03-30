@@ -1,5 +1,4 @@
-Music Salas es una aplicación web donde la idea es que musicos puedan reservas salas de ensayo. El frontEnd está hecho con React y usando Material UI y Bootstrap como frameworks de Front.
-
+Music Salas es una app donde la idea es que músicos puedan reservar salas de ensayo. El front está hecho con React, Material UI y Bootstrap.
 URL => https://music-salas.web.app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
